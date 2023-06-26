@@ -1,0 +1,14 @@
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
+
+my_list = [4, 2, 9, 7, 5]
+target_number = 9
+
+index = linear_search(my_list, target_number)
+if index != -1:
+    print("Found", target_number, "at index", index)
+else:
+    print(target_number, "not found")
